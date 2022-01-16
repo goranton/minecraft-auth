@@ -1,0 +1,16 @@
+name: AuthHomemade
+version: 1.0.0
+description: 'AuthHomemade - Plugin for add auth system to you minecraft server'
+author: goranton98@gmail.com
+main: local.homemade.auth.HomeMadeAuthPlugin
+
+permissions:
+   homeMadeAuth.unregisterUser:
+      description: Allow user to register into server
+      default: false
+
+commands:
+   register:
+      description: Register on server
+      usage: /register password retryPassword
+      permission: homeMadeAuth.unregisterUser
